@@ -13,26 +13,24 @@ if(hour===0 && prepand==='PM')
   {
     hour=12;
     prepand='  Noon';
-
   }
   else {
     hour=12;
     prepand='  PM'
   }
-
 }
 if(hour===0 && prepand==='  AM')
 {
 if (minute===0 && second===0)
-{
+  {
   hour=12;
   prepand=' Midnight';
-}
-else {
+  }
+else 
+  {
   hour =12;
   prepand='  AM';
-}
-
+  }
 }
 var answer = ("current time: "+ hour + prepand + ":" + minute +":" + second);
 document.getElementById('foo').innerHTML = answer;
